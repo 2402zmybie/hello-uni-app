@@ -40,9 +40,24 @@
 				console.log("点击了",num,e)
 			},
 			itemClick(index) {
-				console.log("点击列表" + index)
+				console.log("点击列表: " + index)
 			}
 			
+		},
+		// 页面的生命周期
+		onLoad(options) {
+			// 监听页面加载，其参数为上个页面传递的数据，参数类型为Object（用于页面传参）
+			console.log("页面加载" + options)
+		},
+		//监听页面显示。页面每次出现在屏幕上都触发，包括从下级页面点返回露出当前页面
+		onShow() {
+			console.log("页面显示了")
+		},
+		onReady() {
+			console.log("监听页面初次渲染完成")
+		},
+		onHide() {
+			console.log("监听页面隐藏")
 		}
 	}
 </script>

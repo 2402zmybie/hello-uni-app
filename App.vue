@@ -1,13 +1,19 @@
 <script>
 	export default {
+		// 退出重新启动app,会触发声明周期函数
 		onLaunch: function() {
 			console.log('App Launch')
 		},
 		onShow: function() {
+			//每次进入app,即会触发
 			console.log('App Show')
 		},
 		onHide: function() {
+			//app不见了,即会触发
 			console.log('App Hide')
+		},
+		onError: (err) => {
+			console.log(err)
 		}
 	}
 </script>
