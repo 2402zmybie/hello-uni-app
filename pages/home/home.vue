@@ -6,7 +6,8 @@
 		<view>{{ 1 + 1 }}</view>
 		<view>{{ flag?"我是真的":"我是假的" }}</view>
 		<image :src="imageUrl"></imaeg>
-		<view v-for="(item,index) in arr" :key="item.id">序号:{{item.id}}, 名字:{{ item.name }}, 年龄:{{ item.age }}</view>
+		<view v-for="(item,index) in arr" :key="index" @click="itemClick(index)">序号:{{item.id}}, 名字:{{ item.name }}, 年龄:{{ item.age }}</view>
+		<button @click="clickHandle(20,$event)"type="primary">注册点击事件</button>
 	</view>
 </template>
 
@@ -34,6 +35,13 @@
 			}
 		},
 		methods:{
+			//num是传递过来的参数, e是事件对象
+			clickHandle(num,e) {
+				console.log("点击了",num,e)
+			},
+			itemClick(index) {
+				console.log("点击列表" + index)
+			}
 			
 		}
 	}
