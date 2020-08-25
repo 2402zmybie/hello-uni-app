@@ -42,6 +42,10 @@
             "path" : "pages/detail/view_button_component",
             "style" : {}
         }
+        ,{
+            "path" : "pages/detail/image_component",
+            "style" : {}
+        }
     ],
 	"tabBar": {
 		//tab 上的文字默认颜色
@@ -79,7 +83,8 @@
 		"list":[
 			{
 				"name":"详情页",
-				"path":"pages/detail/view_button_component",
+				// "path":"pages/detail/view_button_component",
+				"path":"pages/detail/image_component",
 				"query":"id=80"
 			}
 		]

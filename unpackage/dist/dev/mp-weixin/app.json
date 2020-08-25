@@ -5,7 +5,8 @@
     "pages/message/message",
     "pages/contact/contact",
     "pages/detail/detail",
-    "pages/detail/view_button_component"
+    "pages/detail/view_button_component",
+    "pages/detail/image_component"
   ],
   "subPackages": [],
   "window": {

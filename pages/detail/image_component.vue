@@ -1,0 +1,30 @@
+<template>
+	<view>
+		<view>
+			<image src="https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=139670673,2550279246&fm=26&gp=0.jpg"></image>
+		</view>
+		<view>
+			<image src="https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=139670673,2550279246&fm=26&gp=0.jpg" mode="aspectFit"></image>
+		</view>
+		<view>
+			<image src="https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=139670673,2550279246&fm=26&gp=0.jpg" mode="aspectFill"></image>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+
+</style>
