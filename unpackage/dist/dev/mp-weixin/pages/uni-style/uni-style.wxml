@@ -1,0 +1,1 @@
+<view><view><text style="font-size:30rpx;display:flex;justify-content:center;">样式学习</text></view><view class="box1">测试文字<text>123</text></view><view class="iconfont">字体图标:</view></view>

@@ -46,6 +46,10 @@
             "path" : "pages/detail/image_component",
             "style" : {}
         }
+        ,{
+            "path" : "pages/uni-style/uni-style",
+            "style" : {}
+        }
     ],
 	"tabBar": {
 		//tab 上的文字默认颜色
@@ -84,7 +88,8 @@
 			{
 				"name":"详情页",
 				// "path":"pages/detail/view_button_component",
-				"path":"pages/detail/image_component",
+				// "path":"pages/detail/image_component",
+				"path":"pages/uni-style/uni-style",
 				"query":"id=80"
 			}
 		]

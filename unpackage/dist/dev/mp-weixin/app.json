@@ -6,7 +6,8 @@
     "pages/contact/contact",
     "pages/detail/detail",
     "pages/detail/view_button_component",
-    "pages/detail/image_component"
+    "pages/detail/image_component",
+    "pages/uni-style/uni-style"
   ],
   "subPackages": [],
   "window": {
