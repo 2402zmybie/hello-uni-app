@@ -32,7 +32,7 @@
 	.box1{
 		width: 750rpx;
 		height: 750rpx;
-		background-color: #0000FF;
+		background-color: $global-color;
 		font-size: 20rpx;
 		color: white;
 		text {
