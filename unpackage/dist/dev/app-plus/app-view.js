@@ -1960,9 +1960,22 @@ var render = function() {
       _c("v-uni-view", { attrs: { _i: 2 } }, [_vm._v(_vm._$g(2, "t0-0"))]),
       _c("v-uni-view", { attrs: { _i: 3 } }, [_vm._v(_vm._$g(3, "t0-0"))]),
       _c("v-uni-view", { attrs: { _i: 4 } }, [_vm._v(_vm._$g(4, "t0-0"))]),
-      _c("v-uni-view", { attrs: { _i: 5 } }, [_vm._v(_vm._$g(5, "t0-0"))])
+      _c("v-uni-view", { attrs: { _i: 5 } }, [_vm._v(_vm._$g(5, "t0-0"))]),
+      _c("v-uni-image", { attrs: { src: _vm._$g(6, "a-src"), _i: 6 } }),
+      _vm._l(_vm._$g(7, "f"), function(item, index, $20, $30) {
+        return _c("v-uni-view", { key: item, attrs: { _i: "7-" + $30 } }, [
+          _vm._v(
+            "序号:" +
+              _vm._$g("7-" + $30, "t0-0") +
+              ", 名字:" +
+              _vm._$g("7-" + $30, "t0-1") +
+              ", 年龄:" +
+              _vm._$g("7-" + $30, "t0-2")
+          )
+        ])
+      })
     ],
-    1
+    2
   )
 }
 var recyclableRender = false
