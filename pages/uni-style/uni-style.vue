@@ -32,6 +32,7 @@
 	.box1{
 		width: 750rpx;
 		height: 750rpx;
+		// scss的使用
 		background-color: $global-color;
 		font-size: 20rpx;
 		color: white;

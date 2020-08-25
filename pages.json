@@ -50,6 +50,10 @@
             "path" : "pages/uni-style/uni-style",
             "style" : {}
         }
+        ,{
+            "path" : "pages/home/home",
+            "style" : {}
+        }
     ],
 	"tabBar": {
 		//tab 上的文字默认颜色
@@ -89,7 +93,8 @@
 				"name":"详情页",
 				// "path":"pages/detail/view_button_component",
 				// "path":"pages/detail/image_component",
-				"path":"pages/uni-style/uni-style",
+				// "path":"pages/uni-style/uni-style",
+				"path":"pages/home/home",
 				"query":"id=80"
 			}
 		]
@@ -99,7 +104,7 @@
 		"navigationBarBackgroundColor": "#007AFF",
 		//设置上方导航栏标题文字颜色, 只有black white
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "绿帽子",
+		"navigationBarTitleText": "老何uni",
 		//所有的页面开启下拉
 		"enablePullDownRefresh": true,
 		//下拉的后面窗口的背景色
