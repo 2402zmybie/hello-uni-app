@@ -1,52 +1,35 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+		<!-- 3 使用组件 -->
+		<test v-if="flag"></test>
+		<button @click="btnClick" type="primary">组件显示和隐藏</button>
 	</view>
 </template>
 
 <script>
+	//1 导入组件
+	import test from '../../components/test.vue'
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				flag:true
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			btnClick() {
+				this.flag = !this.flag
+			}
+		},
+		//2 注册节点
+		components:{
+			test
 		}
 	}
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+	
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view>导航跳转的学习</view>
+		<view class="title">导航跳转的学习</view>
 		<navigator url="../detail/detail?id=80&question=aa">跳转至详情页</navigator>
 		<navigator url="../message/message" open-type="switchTab">跳转到消息页面</navigator>
 		<navigator url="../detail/detail" open-type="redirect">跳转详情页,关闭当前页面</navigator>
@@ -44,5 +44,9 @@
 </script>
 
 <style>
-
+.title {
+	color: red;
+	text-align: center;
+	
+}
 </style>
