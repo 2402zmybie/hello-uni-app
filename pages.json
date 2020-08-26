@@ -1,6 +1,10 @@
 {
 	"pages": [ 
 		{
+		    "path" : "pages/picture/picture_upload",
+		    "style" : {}
+		},
+		{
 		    "path" : "pages/http/http",
 		    "style" : {}
 		},
@@ -66,6 +70,7 @@
             "style" : {}
         }
         
+       
     ],
 	"tabBar": {
 		//tab 上的文字默认颜色

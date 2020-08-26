@@ -140,12 +140,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
     return {
-      'get_chapter': 'https://wanandroid.com/wxarticle/chapters/json',
-      'register_url': 'https://www.wanandroid.com/user/register' };
+      get_chapter: 'https://wanandroid.com/wxarticle/chapters/json',
+      register_url: 'https://www.wanandroid.com/user/register' };
 
   },
   methods: {
@@ -194,9 +195,13 @@ var _default =
       //同步存储键值对
       uni.setStorageSync("id", "1");
     },
+    //同步获取数据接口
     getStorageSync: function getStorageSync() {
       var id = uni.getStorageSync("id");
       console.log(id);
+    },
+    removeStorageSync: function removeStorageSync() {
+      uni.removeStorageSync("id");
     } }
 
   // onShow() {

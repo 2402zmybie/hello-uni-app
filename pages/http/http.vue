@@ -7,6 +7,7 @@
 		<button @click="removeStorage">移除数据</button>
 		<button @click="setStorageSync" type="primary">将 data 存储在本地缓存中指定的 key 中，会覆盖掉原来该 key 对应的内容，这是一个同步接口</button>
 		<button @click="getStorageSync">getStorageSync</button>
+		<button @click="removeStorageSync">removeStorageSync</button>
 	</view>
 </template>
 
@@ -14,8 +15,8 @@
 	export default {
 		data() {
 			return {
-				'get_chapter':'https://wanandroid.com/wxarticle/chapters/json',
-				'register_url':'https://www.wanandroid.com/user/register'
+				get_chapter:'https://wanandroid.com/wxarticle/chapters/json',
+				register_url:'https://www.wanandroid.com/user/register'
 			}
 		},
 		methods: {
@@ -64,9 +65,13 @@
 				//同步存储键值对
 				uni.setStorageSync("id","1")
 			},
+			//同步获取数据接口
 			getStorageSync() {
 				var id = uni.getStorageSync("id")
 				console.log(id)
+			},
+			removeStorageSync() {
+				uni.removeStorageSync("id")
 			}
 		},
 		// onShow() {
