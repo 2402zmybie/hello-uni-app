@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/http/http",
     "pages/list/list",
     "pages/message/message",
     "pages/index/index",
@@ -42,5 +43,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap10.json"
 }

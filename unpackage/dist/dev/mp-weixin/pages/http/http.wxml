@@ -1,0 +1,1 @@
+<view><view>一进入页面就发送GET请求</view><button data-event-opts="{{[['tap',[['postClick',['$event']]]]]}}" bindtap="__e">发送POST请求</button><button data-event-opts="{{[['tap',[['setStorage',['$event']]]]]}}" bindtap="__e">存储数据</button></view>

@@ -1,6 +1,10 @@
 {
 	"pages": [ 
 		{
+		    "path" : "pages/http/http",
+		    "style" : {}
+		},
+		{
 		    "path" : "pages/list/list",
 		    "style" : {
 				//配置下拉刷新
