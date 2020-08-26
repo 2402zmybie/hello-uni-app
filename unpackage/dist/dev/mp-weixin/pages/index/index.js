@@ -133,7 +133,12 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var test = function test() {__webpack_require__.e(/*! require.ensure | components/test */ "components/test").then((function () {return resolve(__webpack_require__(/*! ../../components/test.vue */ 93));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var test = function test() {__webpack_require__.e(/*! require.ensure | components/test */ "components/test").then((function () {return resolve(__webpack_require__(/*! ../../components/test.vue */ 18));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var testA = function testA() {__webpack_require__.e(/*! require.ensure | components/a */ "components/a").then((function () {return resolve(__webpack_require__(/*! ../../components/a.vue */ 104));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var testB = function testB() {__webpack_require__.e(/*! require.ensure | components/b */ "components/b").then((function () {return resolve(__webpack_require__(/*! ../../components/b.vue */ 109));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
 
 
 
@@ -167,7 +172,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
   //2 注册节点
   components: {
-    test: test } };exports.default = _default;
+    test: test,
+    'test-a': testA,
+    'test-b': testB } };exports.default = _default;
 
 /***/ })
 ],[[11,"common/runtime","common/vendor"]]]);

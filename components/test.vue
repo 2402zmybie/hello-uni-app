@@ -32,9 +32,9 @@
 		//作用: 初始化数据
 		created() {
 			console.log('created:'+  this.num)
-			this.timer = setInterval(()=> {
-				console.log("定时器开启")
-			},1000)
+			// this.timer = setInterval(()=> {
+			// 	console.log("定时器开启")
+			// },1000)
 		},
 		//H5才有document, 数据更新之之前调用
 		beforeMount() {

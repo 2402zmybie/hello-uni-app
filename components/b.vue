@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		<view>{{ num }}</view>
 	</view>
 </template>
 
@@ -8,7 +8,7 @@
 	export default {
 		data() {
 			return {
-				
+				num:0
 			};
 		}
 	}
