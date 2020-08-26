@@ -1,6 +1,10 @@
 {
 	"pages": [ 
 		{
+		    "path" : "pages/navigator/navigator",
+		    "style" : {}
+		},
+		{
 		    "path" : "pages/picture/picture_upload",
 		    "style" : {}
 		},
@@ -13,22 +17,6 @@
 		    "style" : {
 				//配置下拉刷新
 				"enablePullDownRefresh":true
-			}
-		},
-		{
-			//设置页面路径
-			"path": "pages/message/message",
-			//设置页面样式(单独设置)
-			"style": {
-				"navigationBarTitleText": "信息页",
-				"navigationBarTextStyle":"white",
-				"navigationBarBackgroundColor": "#ff0000",
-				//给H5单独设置(手机里面用的就是H5的页面, 小程序不支持)
-				"h5": {
-					"pullToRefresh": {
-						"color": "#007AFF"
-					}
-				}
 			}
 		},
 		{
@@ -69,8 +57,6 @@
             "path" : "pages/home/home",
             "style" : {}
         }
-        
-       
     ],
 	"tabBar": {
 		//tab 上的文字默认颜色

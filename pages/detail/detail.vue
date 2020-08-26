@@ -11,15 +11,20 @@
 	</view>
 </template>
 
+
 <script>
 	export default {
 		data() {
 			return {
 				
+				
 			}
 		},
 		methods: {
 			
+		},
+		onLoad(options) {
+			console.log('上个页面传递的参数id:'+ options.id + '参数question:' + options.question)
 		}
 	}
 </script>

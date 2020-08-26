@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/navigator/navigator",
     "pages/picture/picture_upload",
     "pages/http/http",
     "pages/list/list",
-    "pages/message/message",
     "pages/index/index",
     "pages/message/message",
     "pages/contact/contact",
