@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/list/list",
     "pages/message/message",
     "pages/index/index",
     "pages/message/message",
@@ -7,13 +8,14 @@
     "pages/detail/detail",
     "pages/detail/view_button_component",
     "pages/detail/image_component",
-    "pages/uni-style/uni-style"
+    "pages/uni-style/uni-style",
+    "pages/home/home"
   ],
   "subPackages": [],
   "window": {
     "navigationBarBackgroundColor": "#007AFF",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "绿帽子",
+    "navigationBarTitleText": "老何uni",
     "enablePullDownRefresh": true,
     "backgroundColor": "#F8F8F8",
     "backgroundTextStyle": "light"

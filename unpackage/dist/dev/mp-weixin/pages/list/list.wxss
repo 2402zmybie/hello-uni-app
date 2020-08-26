@@ -1,0 +1,8 @@
+
+.list2 {
+	width: 100px;
+	height: 200px;
+	background: #007AFF;
+	margin: 4rpx;
+}
+

@@ -30,7 +30,7 @@
           "name": "详情页",
           "query": "id=80",
           "id": 0,
-          "pathName": "pages/uni-style/uni-style"
+          "pathName": "pages/home/home"
         }
       ]
     }

@@ -89,14 +89,20 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 {
+  // 退出重新启动app,会触发声明周期函数
   onLaunch: function onLaunch() {
     console.log('App Launch');
   },
   onShow: function onShow() {
+    //每次进入app,即会触发
     console.log('App Show');
   },
   onHide: function onHide() {
+    //app不见了,即会触发
     console.log('App Hide');
+  },
+  onError: function onError(err) {
+    console.log(err);
   } };exports.default = _default;
 
 /***/ }),
