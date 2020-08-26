@@ -1,1 +1,1 @@
-<view class="content"><block wx:if="{{flag}}"><test vue-id="8dd740cc-1" bind:__l="__l"></test></block><button type="primary" data-event-opts="{{[['tap',[['btnClick',['$event']]]]]}}" bindtap="__e">组件显示和隐藏</button></view>
+<view class="content"><block wx:if="{{flag}}"><test vue-id="8dd740cc-1" title="{{title}}" data-event-opts="{{[['^myEvent',[['getNumFromChildren']]]]}}" bind:myEvent="__e" bind:__l="__l"></test></block><view>{{"子组件传递的数据"+num}}</view><button type="primary" data-event-opts="{{[['tap',[['btnClick',['$event']]]]]}}" bindtap="__e">组件显示和隐藏</button></view>

@@ -1,8 +1,10 @@
 <template>
 	<view>
 		<view id="myView">
-			这是一个test组件
+			这是一个test组件{{num}}
 		</view>
+		<view>父组件传给子组件的数据{{ title }}</view>
+		<button @click="sendNum">给父组件传值</button>
 		
 	</view>
 </template>
@@ -15,8 +17,12 @@
 				timer:null
 			};
 		},
+		props:['title'],
 		methods:{
-			
+			//给父组件传值要使用事件触发的方式
+			sendNum() {
+				this.$emit('myEvent',this.num)
+			}
 		},
 		//组件生命周期, 数据没有渲染
 		beforeCreate() {

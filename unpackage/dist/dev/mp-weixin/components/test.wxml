@@ -1,1 +1,1 @@
-<view><view id="myView">这是一个test组件</view></view>
+<view><view id="myView">{{'这是一个test组件'+num+''}}</view><view>{{"父组件传给子组件的数据"+title}}</view><button data-event-opts="{{[['tap',[['sendNum',['$event']]]]]}}" bindtap="__e">给父组件传值</button></view>

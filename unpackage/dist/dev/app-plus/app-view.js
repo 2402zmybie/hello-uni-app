@@ -231,11 +231,23 @@ var render = function() {
     "v-uni-view",
     { staticClass: _vm._$g(0, "sc"), attrs: { _i: 0 } },
     [
-      _vm._$g(1, "i") ? _c("test", { attrs: { _i: 1 } }) : _vm._e(),
+      _vm._$g(1, "i")
+        ? _c("test", {
+            attrs: { _i: 1 },
+            on: {
+              myEvent: function($event) {
+                return _vm.$handleViewEvent($event)
+              }
+            }
+          })
+        : _vm._e(),
+      _c("v-uni-view", { attrs: { _i: 2 } }, [
+        _vm._v("子组件传递的数据" + _vm._$g(2, "t0-0"))
+      ]),
       _c(
         "v-uni-button",
         {
-          attrs: { type: "primary", _i: 2 },
+          attrs: { type: "primary", _i: 3 },
           on: {
             click: function($event) {
               return _vm.$handleViewEvent($event)
@@ -373,8 +385,23 @@ var render = function() {
     { attrs: { _i: 0 } },
     [
       _c("v-uni-view", { attrs: { id: "myView", _i: 1 } }, [
-        _vm._v("这是一个test组件")
-      ])
+        _vm._v("这是一个test组件" + _vm._$g(1, "t0-0"))
+      ]),
+      _c("v-uni-view", { attrs: { _i: 2 } }, [
+        _vm._v("父组件传给子组件的数据" + _vm._$g(2, "t0-0"))
+      ]),
+      _c(
+        "v-uni-button",
+        {
+          attrs: { _i: 3 },
+          on: {
+            click: function($event) {
+              return _vm.$handleViewEvent($event)
+            }
+          }
+        },
+        [_vm._v("给父组件传值")]
+      )
     ],
     1
   )
@@ -412,7 +439,7 @@ __webpack_require__.r(__webpack_exports__);
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 
 {
-
+  props: ["title"],
   data: function data() {
     return {
       wxsProps: {} };

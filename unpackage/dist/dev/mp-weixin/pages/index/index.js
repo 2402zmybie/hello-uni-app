@@ -133,7 +133,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var test = function test() {__webpack_require__.e(/*! require.ensure | components/test */ "components/test").then((function () {return resolve(__webpack_require__(/*! ../../components/test.vue */ 18));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var test = function test() {__webpack_require__.e(/*! require.ensure | components/test */ "components/test").then((function () {return resolve(__webpack_require__(/*! ../../components/test.vue */ 93));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
 
 
 
@@ -147,7 +148,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   data: function data() {
     return {
-      flag: true };
+      flag: true,
+      title: 'hellow',
+      num: 0 };
 
   },
   onLoad: function onLoad() {
@@ -156,6 +159,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   methods: {
     btnClick: function btnClick() {
       this.flag = !this.flag;
+    },
+    getNumFromChildren: function getNumFromChildren(num) {
+      console.log('子组件发送的数据' + num);
+      this.num = num;
     } },
 
   //2 注册节点
