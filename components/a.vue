@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<button>修改b组件的数据</button>
+		<button @click="addNum">修改b组件的数据</button>
 	</view>
 </template>
 
@@ -10,6 +10,12 @@
 			return {
 				
 			};
+		},
+		methods:{
+			addNum() {
+				//在一个页面发送全局事件
+				uni.$emit('updateNum',10)
+			}
 		}
 	}
 </script>
