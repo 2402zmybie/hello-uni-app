@@ -260,7 +260,16 @@ var render = function() {
             }
           }
         })
-      })
+      }),
+      _c("v-uni-view", { attrs: { _i: 3 } }, [
+        _vm._v("我希望只在APP-PLUS中看见")
+      ]),
+      _c("v-uni-view", { attrs: { _i: 4 } }, [
+        _vm._v("我希望只在APP-VUE中看见")
+      ]),
+      _c("v-uni-view", { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } }, [
+        _vm._v("测试不同设备样式不同")
+      ])
     ],
     2
   )
@@ -2830,7 +2839,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 21);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.show_image {\n}\r\n", ""]);
+exports.push([module.i, "\n.text-dif {\r\n\r\n\tcolor: #f00;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 

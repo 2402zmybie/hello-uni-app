@@ -137,6 +137,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -163,7 +176,16 @@ var _default =
         loop: true,
         indicator: 'number' });
 
-    } } };exports.default = _default;
+    } },
+
+  onLoad: function onLoad() {
+
+
+
+
+
+
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
