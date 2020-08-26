@@ -256,6 +256,58 @@ var render = function() {
           }
         },
         [_vm._v("存储数据")]
+      ),
+      _c(
+        "v-uni-button",
+        {
+          attrs: { _i: 4 },
+          on: {
+            click: function($event) {
+              return _vm.$handleViewEvent($event)
+            }
+          }
+        },
+        [_vm._v("获取数据")]
+      ),
+      _c(
+        "v-uni-button",
+        {
+          attrs: { _i: 5 },
+          on: {
+            click: function($event) {
+              return _vm.$handleViewEvent($event)
+            }
+          }
+        },
+        [_vm._v("移除数据")]
+      ),
+      _c(
+        "v-uni-button",
+        {
+          attrs: { type: "primary", _i: 6 },
+          on: {
+            click: function($event) {
+              return _vm.$handleViewEvent($event)
+            }
+          }
+        },
+        [
+          _vm._v(
+            "将 data 存储在本地缓存中指定的 key 中，会覆盖掉原来该 key 对应的内容，这是一个同步接口"
+          )
+        ]
+      ),
+      _c(
+        "v-uni-button",
+        {
+          attrs: { _i: 7 },
+          on: {
+            click: function($event) {
+              return _vm.$handleViewEvent($event)
+            }
+          }
+        },
+        [_vm._v("getStorageSync")]
       )
     ],
     1

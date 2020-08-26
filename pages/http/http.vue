@@ -3,6 +3,10 @@
 		<view>一进入页面就发送GET请求</view>
 		<button @click="postClick">发送POST请求</button>
 		<button @click="setStorage">存储数据</button>
+		<button @click="getStorage">获取数据</button>
+		<button @click="removeStorage">移除数据</button>
+		<button @click="setStorageSync" type="primary">将 data 存储在本地缓存中指定的 key 中，会覆盖掉原来该 key 对应的内容，这是一个同步接口</button>
+		<button @click="getStorageSync">getStorageSync</button>
 	</view>
 </template>
 
@@ -39,6 +43,30 @@
 						console.log('存储成功')
 					}
 				})
+			},
+			getStorage() {
+				uni.getStorage({
+					key:'username',
+					success(res) {
+						console.log("获取key为username的数据成功:"+ res.data)
+					}
+				})
+			},
+			removeStorage() {
+				uni.removeStorage({
+					key:'username',
+					success: function (res) {
+					        console.log('移除key为username的数据成功');
+					    }
+				})
+			},
+			setStorageSync() {
+				//同步存储键值对
+				uni.setStorageSync("id","1")
+			},
+			getStorageSync() {
+				var id = uni.getStorageSync("id")
+				console.log(id)
 			}
 		},
 		// onShow() {

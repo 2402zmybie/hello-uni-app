@@ -136,6 +136,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -169,6 +173,30 @@ var _default =
           console.log('存储成功');
         } });
 
+    },
+    getStorage: function getStorage() {
+      uni.getStorage({
+        key: 'username',
+        success: function success(res) {
+          console.log("获取key为username的数据成功:" + res.data);
+        } });
+
+    },
+    removeStorage: function removeStorage() {
+      uni.removeStorage({
+        key: 'username',
+        success: function success(res) {
+          console.log('移除key为username的数据成功');
+        } });
+
+    },
+    setStorageSync: function setStorageSync() {
+      //同步存储键值对
+      uni.setStorageSync("id", "1");
+    },
+    getStorageSync: function getStorageSync() {
+      var id = uni.getStorageSync("id");
+      console.log(id);
     } }
 
   // onShow() {
